@@ -4,4 +4,4 @@ ip=$(dig +short myip.opendns.com @resolver1.opendns.com)
 echo $ip
 
 #send IP to script
-#curl --data "ip=$IP" http://www.example.com
+ip=$ip; curl -X GET "http://www.webworksmd.com/addip.php${ip}"
