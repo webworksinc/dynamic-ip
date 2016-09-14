@@ -1,9 +1,9 @@
 <?php
 $allowedIPs = ["123.123.123.123","12.12.12.12"];
 $referer = $_SERVER['HTTP_REFERER'];
-$ip = $_POST["ip"];
+$ip = $_GET["ip"];
 
-//db info file
+//db info file or credentials
 include("./db.php");
 
 //see if IP requesting is allowed
